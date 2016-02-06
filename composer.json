@@ -1,0 +1,16 @@
+{
+    "name": "back-2-95/php-mongodb-crud",
+    "description": "CRUD library for storing stuff to MongoDB with PHP7",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^5.2"
+    },
+    "authors": [
+        {
+            "name": "Marko Korhonen",
+            "email": "marko.korhonen@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
