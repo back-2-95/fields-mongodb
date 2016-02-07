@@ -27,10 +27,6 @@
             "email": "marko.korhonen@gmail.com"
         }
     ],
-    "repositories" : [ {
-        "type" : "vcs",
-        "url" : "git@github.com:back-2-95/php-crud-fields.git"
-    } ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {

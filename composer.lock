@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "68a07c96e524177275ea6c4fab9f5e03",
-    "content-hash": "2bf026dfff84473084c378b90d7063c4",
+    "hash": "6151ada46830c9911e1b09caaa8db9f5",
+    "content-hash": "84b3677b8f6f2138476526d59e1aa34d",
     "packages": [
         {
             "name": "back-2-95/php-crud-fields",
@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/back-2-95/php-crud-fields.git",
-                "reference": "1e343f53fe9655d19fc9f05cec4b36e84904fc91"
+                "reference": "4af8268f81a7f304b9f7b4e3f60e806494658bb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/back-2-95/php-crud-fields/zipball/1e343f53fe9655d19fc9f05cec4b36e84904fc91",
-                "reference": "1e343f53fe9655d19fc9f05cec4b36e84904fc91",
+                "url": "https://api.github.com/repos/back-2-95/php-crud-fields/zipball/4af8268f81a7f304b9f7b4e3f60e806494658bb2",
+                "reference": "4af8268f81a7f304b9f7b4e3f60e806494658bb2",
                 "shasum": ""
             },
             "require": {
@@ -33,16 +33,7 @@
                     "BackTo95\\MongoDbCrud\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "BackTo95Test\\MongoDbCrud\\": "test/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "phpunit"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Marko Korhonen",
@@ -51,11 +42,7 @@
             ],
             "description": "CRUD Field API for PHP7",
             "homepage": "https://github.com/back-2-95/php-crud-fields",
-            "support": {
-                "source": "https://github.com/back-2-95/php-crud-fields/tree/master",
-                "issues": "https://github.com/back-2-95/php-crud-fields/issues"
-            },
-            "time": "2016-02-07 06:14:12"
+            "time": "2016-02-07 06:24:23"
         },
         {
             "name": "mongodb/mongodb",
