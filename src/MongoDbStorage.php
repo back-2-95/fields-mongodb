@@ -9,11 +9,11 @@ use MongoDB\Collection;
 
 class MongoDbStorage implements StorageInterface
 {
-    protected $mongodb;
+    protected $collection;
 
-    public function __construct(Client $mongodb)
+    public function __construct(Client $mongodb, string $database, string $collection)
     {
-        $this->mongodb = $mongodb;
+        $this->collection = $mongodb->selectCollection($database, $collection);
     }
 
     public function getEntityConfiguration(string $entity) : EntityConfiguration
@@ -25,7 +25,7 @@ class MongoDbStorage implements StorageInterface
 
     protected function getCollection() : Collection
     {
-        return $this->mongodb->selectCollection('demo', 'entity_configurations');
+        return $this->collection;
     }
 
     public function storeEntityConfiguration(EntityConfiguration $configuration) : bool

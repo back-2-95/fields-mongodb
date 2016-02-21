@@ -15,6 +15,6 @@ Create API and set MongoDB storage:
 ```PHP
 $api = new \BackTo95\Fields\Api();
 $client = new \MongoDB\Client;
-$storage = new \BackTo95\Fields\MongoDb\MongoDbStorage($client);
+$storage = new \BackTo95\Fields\MongoDb\MongoDbStorage($client, 'database', 'collection');
 $api->setStorage($storage);
 ```

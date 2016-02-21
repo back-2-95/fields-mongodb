@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/back-2-95/fields.git",
-                "reference": "3882db5594d3a90534c38f28c6bace61edb224ac"
+                "reference": "0fc62b97e54a58181e2617ec507cddabc28c563a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/back-2-95/fields/zipball/3882db5594d3a90534c38f28c6bace61edb224ac",
-                "reference": "3882db5594d3a90534c38f28c6bace61edb224ac",
+                "url": "https://api.github.com/repos/back-2-95/fields/zipball/0fc62b97e54a58181e2617ec507cddabc28c563a",
+                "reference": "0fc62b97e54a58181e2617ec507cddabc28c563a",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
             ],
             "description": "CRUD Fields API for PHP7",
             "homepage": "https://github.com/back-2-95/php-crud-fields",
-            "time": "2016-02-21 15:52:52"
+            "time": "2016-02-21 16:19:09"
         },
         {
             "name": "mongodb/mongodb",
