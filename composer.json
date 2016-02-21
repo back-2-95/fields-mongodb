@@ -1,10 +1,10 @@
 {
-    "name": "back-2-95/php-mongodb-crud",
-    "description": "CRUD library for storing stuff to MongoDB with PHP7",
+    "name": "back-2-95/fields-mongodb",
+    "description": "MongoDB storage adapter for back-2-95/fields",
     "type": "library",
     "require": {
         "php": "^7.0",
-        "back-2-95/php-crud-fields": "dev-master",
+        "back-2-95/fields": "dev-master",
         "mongodb/mongodb": "1.*"
     },
     "require-dev": {
@@ -13,12 +13,12 @@
     "homepage": "https://github.com/back-2-95/php-mongodb-crud",
     "autoload": {
         "psr-4": {
-            "BackTo95\\MongoDbCrud\\": "src/"
+            "BackTo95\\Fields\\MongoDb\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BackTo95Test\\MongoDbCrud\\": "test/"
+            "BackTo95Test\\Fields\\MongoDb\\": "test/"
         }
     },
     "authors": [
