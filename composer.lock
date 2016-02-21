@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6151ada46830c9911e1b09caaa8db9f5",
-    "content-hash": "84b3677b8f6f2138476526d59e1aa34d",
+    "hash": "bfd69f795274715c98ed06b882216bf6",
+    "content-hash": "079250b0eb00fef575af6917c5fdef09",
     "packages": [
         {
-            "name": "back-2-95/php-crud-fields",
+            "name": "back-2-95/fields",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/back-2-95/php-crud-fields.git",
-                "reference": "244b1cc4cf0dcc8500c3e61fb08a6459092070de"
+                "url": "https://github.com/back-2-95/fields.git",
+                "reference": "3882db5594d3a90534c38f28c6bace61edb224ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/back-2-95/php-crud-fields/zipball/244b1cc4cf0dcc8500c3e61fb08a6459092070de",
-                "reference": "244b1cc4cf0dcc8500c3e61fb08a6459092070de",
+                "url": "https://api.github.com/repos/back-2-95/fields/zipball/3882db5594d3a90534c38f28c6bace61edb224ac",
+                "reference": "3882db5594d3a90534c38f28c6bace61edb224ac",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
             ],
             "description": "CRUD Fields API for PHP7",
             "homepage": "https://github.com/back-2-95/php-crud-fields",
-            "time": "2016-02-21 12:37:30"
+            "time": "2016-02-21 15:52:52"
         },
         {
             "name": "mongodb/mongodb",
@@ -1203,7 +1203,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "back-2-95/php-crud-fields": 20
+        "back-2-95/fields": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
