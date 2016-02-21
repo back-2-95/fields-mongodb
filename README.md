@@ -1,8 +1,8 @@
 # back-2-95/fields-mongodb
 
-CRUD library for storing stuff to MongoDB with PHP7
+MongoDB storage adapter for back-2-95/fields
 
-Testing... Testing Packagist auto-update....
+![Travis CI](https://api.travis-ci.org/back-2-95/fields-mongodb.svg?branch=master)
 
 ## What should this library do? ##
 
