@@ -11,7 +11,6 @@ env:
     - MONGO_REPO_TYPE="precise/mongodb-enterprise/"
     - SOURCES_LOC="/etc/apt/sources.list.d/mongodb.list"
   matrix:
-    - DRIVER_VERSION=1.1.2 SERVER_VERSION=2.4
     - DRIVER_VERSION=1.1.2 SERVER_VERSION=2.6
     - DRIVER_VERSION=1.1.2 SERVER_VERSION=3.0
     - DRIVER_VERSION=1.1.2 SERVER_VERSION=3.2
@@ -23,14 +22,12 @@ before_install:
   - sudo apt-get update -qq
 
 install:
-  - if dpkg --compare-versions ${SERVER_VERSION} le "2.4"; then export SERVER_PACKAGE=mongodb-10gen-enterprise; else export SERVER_PACKAGE=mongodb-enterprise; fi
-  - sudo apt-get install ${SERVER_PACKAGE}
+  - sudo apt-get install mongodb-enterprise
   - sudo apt-get -y install gdb
 
 before_script:
   - phpenv config-rm xdebug.ini
-  - if dpkg --compare-versions ${SERVER_VERSION} le "2.4"; then export SERVER_SERVICE=mongodb; else export SERVER_SERVICE=mongod; fi
-  - if ! nc -z localhost 27017; then sudo service ${SERVER_SERVICE} start; fi
+  - if ! nc -z localhost 27017; then sudo service mongod start; fi
   - mongod --version
   - pecl install -f mongodb-${DRIVER_VERSION}
   - if [ "$(php -v | grep 'PHP 5.4')" ]; then echo 'extension = mongodb.so' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini; fi
